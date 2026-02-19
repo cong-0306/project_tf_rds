@@ -3,7 +3,6 @@ Terraform을 사용하여 AWS RDS (Primary + Cross-Regiion Read Replica) 환경�
 
 본 구성은 ROSA(OpenShift) 환경에서 사용할 PostgreSQL RDS를 생성하며, DR(재해 복구)을 위해 Cross-Region ReadReplica를 함께 구성
 
----
 
 ## 📌Architecture Overview
 
@@ -13,7 +12,6 @@ Terraform을 사용하여 AWS RDS (Primary + Cross-Regiion Read Replica) 환경�
 - Private RDS (publicly_accessible = false)
 - Dev 환경 기준 Single-AZ
 
----
 
 ## 📁 Project Structure
 
@@ -27,7 +25,6 @@ rds/
 
 ※ `terraform.tfvars` 파일은 보안상 Git에 업로드하지 않는다.
 
----
 
 ## ⚙ Usage
 
@@ -59,7 +56,6 @@ terraform destroy
 ```
 RDS 및 Replica 포함 전체 리소스가 삭제되니 명령어 사용 시 주의
 
----
 
 ## 🔐 Security Notes
 
@@ -67,7 +63,6 @@ RDS 및 Replica 포함 전체 리소스가 삭제되니 명령어 사용 시 주
 - 해당 파일은 `.gitignore`에 의해 Git에서 제외
 - 민감 정보는 환경변수 (`TF_VAR_db_password`) 사용을 권장
 
----
 
 ## ⚠ Important
 
