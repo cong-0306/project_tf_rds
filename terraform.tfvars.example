@@ -7,17 +7,17 @@ dr_region      = "ap-southeast-1"
 ############################
 # Networking
 ############################
-vpc_id = "vpc-069ef21d610649ec0"
+vpc_id = "vpc-xxxxxxxx"
 
 db_subnet_ids = [
-  "subnet-07bdc3a689b2e35f2",
-  "subnet-087f9f1be9d987b01"
+  "subnet-rosa_private_subnet_ida",
+  "subnet-rosa_private_subnet_idc"
 ]
 
 ############################
 # RDS Settigns
 ############################
-rosa_node_sg_id = "sg-0d5a7a009e5ddeb84"
+rosa_node_sg_id = "sg-xxxxxxxxxxx"
 
 db_identifier = "rosa-main-rds"
 db_name       = "app_db"
