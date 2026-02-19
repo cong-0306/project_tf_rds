@@ -19,8 +19,10 @@ Terraform을 사용하여 AWS RDS (Primary + Cross-Regiion Read Replica) 환경�
 rds/
 ├─ main.tf
 ├─ variales.tf
+├─ outputs.tf
+├─ provider.tf
 ├─ terraform.tfvars.example
-├─ .gitignore
+└─ .gitignore
 ```
 
 ※ `terraform.tfvars` 파일은 보안상 Git에 업로드하지 않는다.
