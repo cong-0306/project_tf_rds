@@ -17,11 +17,13 @@ Terraform을 사용하여 AWS RDS (Primary + Cross-Regiion Read Replica) 환경�
 
 ## 📁 Project Structure
 
+```bash
 rds/
 ├─ main.tf
 ├─ variales.tf
 ├─ terraform.tfvars.example
 ├─ .gitignore
+```
 
 ※ `terraform.tfvars` 파일은 보안상 Git에 업로드하지 않는다.
 
@@ -62,7 +64,7 @@ RDS 및 Replica 포함 전체 리소스가 삭제되니 명령어 사용 시 주
 ## 🔐 Security Notes
 
 - `terraform.tfvars` 파일에는 실제 DB 비밀번호가 포함될 수 있다.
-- 해당 파일은 `.gitingnore`에 의해 Git에서 제외
+- 해당 파일은 `.gitignore`에 의해 Git에서 제외
 - 민감 정보는 환경변수 (`TF_VAR_db_password`) 사용을 권장
 
 ---
@@ -70,4 +72,4 @@ RDS 및 Replica 포함 전체 리소스가 삭제되니 명령어 사용 시 주
 ## ⚠ Important
 
 - 운영 환경에서는 `multi_az = true` 설정을 권장한다.
-- `force_destory` 옵션 사용 시 데이터가 완전히 삭제될 수 있으므로 주의 필요
+- `force_destroy` 옵션 사용 시 데이터가 완전히 삭제될 수 있으므로 주의 필요
