@@ -34,24 +34,32 @@ rds/
 `terraform.tfvars.example`을 복사하여 `terraform.tfvars` 파이리 생성
 
 ```bash
-cp terraform.tfvars.example terraform.tfvars 
+cp terraform.tfvars.example terraform.tfvars
+```
 필요한 값들을 실제 환경에 맞게 수정한다.
 
 ### 2. 초기화
 
-`terraform init`
+```bash
+terraform init
+```
 
 ### 3. 실행
-`terraform apply`
+
+```bash
+terraform apply
+```
 
 ### 4. 삭제
 
-`terraform destroy`
+```bash
+terraform destroy
+```
 RDS 및 Replica 포함 전체 리소스가 삭제되니 명령어 사용 시 주의
 
 ---
 
-## 🔐 Secyrity Notes
+## 🔐 Security Notes
 
 - `terraform.tfvars` 파일에는 실제 DB 비밀번호가 포함될 수 있다.
 - 해당 파일은 `.gitingnore`에 의해 Git에서 제외
