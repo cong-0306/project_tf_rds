@@ -32,7 +32,7 @@ rds/
 
 ### 1. terraform.tfvars 생성
 
-`terraform.tfvars.example`을 복사하여 `terraform.tfvars` 파이리 생성
+`terraform.tfvars.example`을 복사하여 `terraform.tfvars` 파일 생성
 
 ```bash
 cp terraform.tfvars.example terraform.tfvars
